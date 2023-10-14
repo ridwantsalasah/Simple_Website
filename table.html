@@ -112,9 +112,25 @@
     <label for="notelp">No. Telp :</label><br>
     <input type="text" name="notelp" id="notelp"><br>
     <label for="alamat">Alamat :</label><br>
-    <input type="text" name="alamat" id="alamat"><br>
-    <label for="pengiriman">Pengiriman :</label><br>
-    <input type="text" name="pengiriman" id="notelp"><br><br>
-    <input type="submit" name="kirim">
+    <form method="post"> <textarea rows="10" cols=“40" wrap="physical" 
+        name="alamat">
+    </textarea>
+    <br>
+    <br><label for="pengiriman">Pengiriman :</label><br>
+    <input type="radio" id="jne" name="pengiriman" value="JNE">
+    <label for="jne">JNE</label><br>
+    <input type="radio" id="jne" name="pengiriman" value="JNT">
+    <label for="jne">JNT</label><br>
+    <input type="radio" id="sicepat" name="pengiriman" value="SICEPAT">
+    <label for="sicepat">SICEPAT</label><br>
+    <br><label for="norek">Nomor Rekening</label><br>
+    <select name = "norek">
+        <option value="BCA"> BCA <br>
+        <option value="BRI"> BRI <br>
+        <option value="Mandiri"> Mandiri <br>
+    </select><br>
+    
+    <br><input type="submit" name="kirim">
+    <button class="btn btn-primary" onclick="reset()">Reset</button>
 </form>
 </html>
