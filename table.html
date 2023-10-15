@@ -1,30 +1,12 @@
 <!DOCTYPE html>
-<table>
 <head>
-    <style>
-        .table-container {
-            overflow-x: auto;
-        }
-        table {
-            width: 60%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align : center;
-            vertical-align : middle;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+<title>Tabel Menu Frozen Food</title>
 </head>
 <body>
 
 <h2 align="left-center">Tabel Menu Frozen Food</h2>
 
-<table>
+<table border="1" width="80%" >
     <tr>
         <th rowspan="2" width="5px">No</th>
         <th rowspan="2" width="10px">Makanan</th>
@@ -34,13 +16,13 @@
         <th width="10px" colspan="2">Pengiriman</th>
     </tr>
     <tr>
-        <td width="10px">Dalam Kota</td> 
-        <td width="10px">Luar Kota</td>
+        <td align="center" width="10px">Dalam Kota</td> 
+        <td align="center" width="10px">Luar Kota</td>
     </tr>
     <tr>
         <td rowspan="3" align="center">1</td>
         <td rowspan="3">
-            <img  width="70%" height="70%"src="fiesta_nugget.jpg" alt="Fiesta Chicken Nugget">
+            <img  width=70%" height="70%"src="fiesta_nugget.jpg" alt="Fiesta Chicken Nugget">
         </td>
         <td rowspan="3" align="center">Fiesta Chicken Nugget</td>
         <td  align="center" >250 gr</td>
@@ -53,7 +35,7 @@
         <td align="center">Rp 45.000</td>
     </tr>
     <tr>
-        <td  align="center">1.000 gr </td>
+        <td  align="center">1 kg </td>
         <td  align="center">Rp 85.000  </td>
         <td  align="center">Rp 20.000 - 25.000  </td>
         <td  align="center">Rp 18.000 - 20.000  </td>
@@ -74,7 +56,7 @@
         <td align="center">Rp 95.000</td>
     </tr>
     <tr>
-        <td  align="center">1.000 gr </td>
+        <td  align="center">1 kg </td>
         <td  align="center">Rp 160.000  </td>
         <td  align="center">Rp 20.000 - 25.000  </td>
         <td  align="center">Rp 18.000 - 20.000  </td>
@@ -95,7 +77,7 @@
         <td align="center">Rp 35.000</td>
     </tr>
     <tr>
-        <td  align="center">1.000 gr </td>
+        <td  align="center">1 kg </td>
         <td  align="center">Rp 55.000  </td>
         <td  align="center">Rp 20.000 - 25.000  </td>
         <td  align="center">Rp 18.000 - 20.000  </td>
@@ -105,122 +87,79 @@
 </body>
 <br>
 <h2>Formulir Pemesanan </h2>
-    <table>
-        <tr>
-            <td><label for="nama">Nama Pemesanan</label></td>
-            <td>:</td>
-            <td><input type="text" name="nama" id="nama"></td>
-        </tr>
-        <tr>
-            <td><label for="notelp">No. Telp</label></td>
-            <td>:</td>
-            <td><input type="text" name="notelp" id="notelp"></td>
-        </tr>
-        <tr>
-         <td>Alamat </td>
-            <td>:</td>
-            <td><textarea style="width: 250; height: 100;"></textarea></td>
-        </tr>
-        <td><label for="pengiriman">Pengiriman</label></td>
-            <td>:</td>
-            <td>
-                <input type="radio" name="pengiriman" id="pengiriman" value="JNE">
-                <label for="JNE">JNE</label>
-                <input type="radio" name="pengiriman" id="pendidikan" value="JNT">
-                <label for="JNT">JNT</label>
-                <input type="radio" name="pengiriman" id="pendidikan" value="Si Cepat">
-                <label for="Si Cepat">Si Cepat</label>
-            </td>
-        <tr>
-        <td><label for="menupilihan">Menu Pilihan</label></td>
-            <td>:</td>      
-              <td>
-                <input type="radio" name="menupilihan" id="menupilihan" value="Fiesta Chicken Nugget">
-                <label for="Fiesta Chicken Nugget">Fiesta Chicken Nugget</label>
-                <input type="radio" name="menupilihan" id="menupilihan" value="Kanzler Cocktail">
-                <label for="Kanzler Cocktail">Kanzler Cocktail</label>
-                <input type="radio" name="menupilihan" id="menupilihan" value="Goldenfarm Shoestring">
-                <label for="Goldenfarm Shoestring">Goldenfarm Shoestring</label>
-            </td>
-            </tr>
-             <td><label for="lang">Berat</label></td>
-            <td>:</td>
-            <td>
-                <input type="checkbox" name="diklat" id="lang1" value="250 gram">
-                <label for="lang">250 gram</label>
-                <input type="checkbox" name="diklat" id="lang2" value="500 gram">
-                <label for="lang">500 gram</label>
-                <input type="checkbox" name="diklat" id="lang3" value="1000 gram">
-                <label for="lang">1000 gram</label>
-            </td>
-            <tr>
-            <td><label for="jmlpesanan">Jumlah Pesanan</label></td>
-            <td>:</td>
-            <td>
-                <select id="jmlpesanan">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </select>
-            </td>
-            </tr>
-            
-            <td><label for="bayar">Pembayaran</label></td>
-            <td>:</td>
-            <td>
-                <input type="radio" name="bayar" id="bayar" value="Cash On Delivery">
-                <label for="Cash On Delivery">Cash On Delivery</label>
-                <input type="radio" name="bayar" id="bayar" value="Transfer Bank">
-                <label for="Transfer Bank">Transfer Bank</label>
-            </td>
-            <tr>
-            <td><label for="rek">No Rekening</label></td>
-            <td>:</td>
-            <td>
-                <select id="rek">
-                    <option value="BCA - 7756723109">BCA - 7756723109</option>
-                    <option value="BNI - 3672290909">BNI - 3672290909</option>
-                    <option value="BRI - 1010346777">BRI - 1010346777</option>
-                    <option value="BSI - 9077723121">BSI - 9077723121</option>
-                    <option value="Bank Lainnya">Bank Lainnya</option>
-                </select>
-            </td>
-            <tr>
-            <td>
-              <br>
-               </table> <input type="submit" value="Simpan" name="t1">
-               <input type="reset" value="Reset" name="t2"> </form>
-            </td>
-        </tr>
-        <h2>Formulir Member </h2>
-        <table>
-     <tr>
-         <td><label for="uname">Username</label></td>
-         <td>:</td>
-         <td><input type="text" name="uname" id="uname"></td>
-     </tr>
-     <tr>
-         <td><label for="pass">Password</label></td>
-         <td>:</td>
-         <td><input type="password" name="pass" id="pass"></td>
-     </tr>
-      <tr>
-         <td><label for="email">Email</label></td>
-         <td>:</td>
-         <td><input type="text" name="email" id="email"></td>
-     </tr>
-     <tr>
-         <td><label for="bukti">Struk Pembelian Terakhir</label></td>
-         <td>:</td>
-         <td><input type="file" name="bukti" id="bukti"></td>
-     </tr>
-        
-      
+<form>
+    <label for="fnama">Nama Pemesan :</label>
+    <input type="text" name="fnama" id="fnama"><br>
+    <label for="notelp">No. Telp :</label>
+    <input type="text" name="notelp" id="notelp"><br>
+    <label for="alamat">Alamat :</label><br>
+    <form method="post"> <textarea rows="10" cols=“40" wrap="physical" 
+        name="alamat">
+    </textarea>
+    <br>
+
+        <label for="pengiriman">Pengiriman :</label>
+        <input type="radio" id="jne" name="kirim" value="JNE">
+    <label for="jne">JNE</label>
+    <input type="radio" id="jne" name="kirim" value="JNT">
+    <label for="jne">JNT</label>
+    <input type="radio" id="sicepat" name="kirim" value="SICEPAT">
+    <label for="sicepat">SICEPAT</label><br>
+
+        <label for="menupilihan">Menu Pilihan:</label>
+        <input type="radio" name="menupilihan" id="FCNugget" value="FCNugget">
+        <label for="FCNugget">Fiesta Chicken Nugget</label>
+        <input type="radio" name="menupilihan" id="KnzCocktail" value="KnzCocktail">
+        <label for="KnzCocktail">Kanzler Cocktail</label>
+        <input type="radio" name="menupilihan" id="GFShoestring" value="GFShoestring">
+        <label for="GFShoestring">Goldenfarm Shoestring</label>
+</br>    
+        <label for="lang">Berat:</label>
+        <input type="checkbox" name="diklat" id="lang1" value="250 gr">
+        <label for="lang1">250 gr</label>
+        <input type="checkbox" name="diklat" id="lang2" value="500 gr">
+        <label for="lang2">500 gr</label>
+        <input type="checkbox" name="diklat" id="lang3" value="1kg">
+        <label for="lang3">1kg</label>
+    <br>
+        <label for="jmlpesanan">Jumlah Pesanan:</label>
+        <select id="jmlpesanan">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+    <br>
+        <label for="bayar">Pembayaran:</label>
+        <input type="radio" name="bayar" id="COD" value="COD">
+        <label for="COD">COD</label>
+        <input type="radio" name="bayar" id="tfbank" value="tfbank">
+        <label for="TransferBank">TF Bank</label>
+    <br>
+        <label for="rek">No Rekening:</label>
+        <select id="rek">
+            <option value="BCA">BCA - 7756723109</option>
+            <option value="BNI">BNI - 3672290909</option>
+            <option value="Kosong">Kosong Jika COD</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Simpan Pesanan" name="t1">
+        <input type="reset" value="Batalkan" name="t2">
+    <h2>Formulir Member</h2>
+        <label for="uname">Username:</label>
+        <input type="text" name="uname" id="uname"> 
+    <br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass">
+    <br>    
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+    <br>
+        <label for="bukti">Struk Pembelian Terakhir:</label>
+        <input type="file" name="bukti" id="bukti">
+    <br>
+    <br>
+    <input type="submit" value="Simpan" name="t1">
+    <input type="reset" value="Reset" name="t2">     
 </html>
