@@ -85,6 +85,96 @@ body{
       width: 25%;
       margin-top: 12px;
       padding-right: 10px;
+      font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    }
+    .button{
+      appearance: none;
+      backface-visibility: hidden;
+      background-color: #27ae60;
+      border-radius: 8px;
+      border-style: none;
+      box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: normal;
+      line-height: 1.5;
+      outline: none;
+      overflow: hidden;
+      padding: 13px 20px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transform: translate3d(0, 0, 0);
+      transition: all .3s;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+    .button1{
+        appearance: none;
+        backface-visibility: hidden;
+        background-color: #d81c0e;
+        border-radius: 8px;
+        border-style: none;
+        box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: normal;
+        line-height: 1.5;
+        outline: none;
+        overflow: hidden;
+        padding: 13px 20px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transform: translate3d(0, 0, 0);
+        transition: all .3s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: top;
+        white-space: nowrap;
+      }
+    
+    .button:hover {
+      background-color: #1e8449;
+      opacity: 1;
+      transform: translateY(0);
+      transition-duration: .35s;
+    }
+    .button1:hover {
+        background-color: #a81717;
+        opacity: 1;
+        transform: translateY(0);
+        transition-duration: .35s;
+      }
+    .button:active {
+      transform: translateY(2px);
+      transition-duration: .35s;
+    }
+    .button1:active {
+        transform: translateY(2px);
+        transition-duration: .35s;
+      }
+    
+    .button:hover {
+      box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+    }
+    .radioB, .header2{
+        font-family:'Roboto Condensed', sans-serif;
+
     }
     </style>
 <title >Tabel Menu Frozen Food</title>
@@ -197,25 +287,25 @@ body{
     </textarea>
     <br>
     <div>
-      <label class="kirim" for="pengiriman">Pengiriman :</label>
+      <label class="header2" for="pengiriman">Pengiriman :</label>
     <div>
       <input type="radio" id="jne" name="kirim" value="JNE">
       <label class="radioB"for="jne">JNE</label>
-      <input type="radio" id="jne" name="kirim" value="JNT">
+      <input  type="radio" id="jne" name="kirim" value="JNT">
       <label class="radioB"for="jne">JNT</label>
       <input type="radio" id="sicepat" name="kirim" value="SICEPAT">
       <label class="radioB" for="sicepat">SICEPAT</label><br>
     </div>
     </div>
-        <label for="menupilihan">Menu Pilihan:</label>
-        <input type="radio" name="menupilihan" id="FCNugget" value="FCNugget">
+        <label class="header2" for="menupilihan">Menu Pilihan:</label>
+        <input type="radio" class="radioB" name="menupilihan" id="FCNugget" value="FCNugget">
         <label class="radioB" for="FCNugget">Fiesta Chicken Nugget</label>
         <input type="radio" name="menupilihan" id="KnzCocktail" value="KnzCocktail">
         <label class="radioB" for="KnzCocktail">Kanzler Cocktail</label>
         <input type="radio" name="menupilihan" id="GFShoestring" value="GFShoestring">
         <label class="radioB" for="GFShoestring">Goldenfarm Shoestring</label>
 </br>    
-        <label for="lang">Berat:</label>
+        <label class="header2" for="lang">Berat:</label>
         <input type="checkbox" name="diklat" id="lang1" value="250 gr">
         <label for="lang1">250 gr</label>
         <input type="checkbox" name="diklat" id="lang2" value="500 gr">
@@ -249,8 +339,8 @@ body{
       </label>
         <br>
         <br>
-        <input  type="submit" value="Simpan Pesanan" name="t1">
-        <input  type="reset" value="Batalkan" name="t2">
+        <input class="button" type="submit" value="Simpan Pesanan" name="t1">
+        <input class="button1" type="reset" value="Batalkan" name="t2">
 <div>
     <h2>Formulir Member</h2>
     <label>
@@ -268,11 +358,11 @@ body{
     </label>
     <br>
         <label for="bukti">Struk Pembelian Terakhir:</label>
-        <input type="file" name="bukti" id="bukti">
+        <input class="form-control" type="file" name="bukti" id="bukti">
     <br>
     <br>
-    <input type="submit" value="Simpan" name="t1">
-    <input type="reset" value="Reset" name="t2">
+    <input class="button" type="submit" value="Simpan" name="t1">
+    <input class="button1" type="reset" value="Reset" name="t2">
     </div> 
   </div>
 </form>
