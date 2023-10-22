@@ -1,17 +1,100 @@
 <!DOCTYPE html>
 <head>
-    <style>
-        tr{background-color: beige; font-family: Arial; }
-        td.header{font-weight: bold; }
-        h2.header1{text-align: center; font-family: Arial, sans-serif;text-transform: uppercase;}
+    <style>;
+body{
+  background: url('http://all4desktop.com/data_images/original/4236532-background-images.jpg');
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #262626;
+  margin: 5% 0;}
+      tr{background-color: beige; font-family: Arial; }
+      td.header{
+        font-weight: bold; 
+      }
+      td {
+      text-align: center;
+      }
+      th.header {
+      text-align: center;
+      vertical-align: middle;
+      width: 5px;
+    }
+      .container{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @media (min-width: 1200px)
+      {
+        .container{
+          max-width: 1140px;
+        }
+      }
+      .d-flex{
+        display: flex;
+        flex-direction: row;
+        background: #f6f6f6;
+        border-radius: 0 0 5px 5px;
+        padding: 25px;
+      }
+      form{
+        flex: 4;
+      }
+      .Yorder{
+        flex: 2;
+      }
+      h2{
+        text-align: center;
+      }
+      
+    .title{
+      background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #5195A8), color-stop(100, #70EAFF));
+      background: -moz-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+      background: -ms-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+      background: -o-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+      background: linear-gradient(to bottom right, #5195A8 0%, #70EAFF 100%);
+      border-radius:5px 5px 0 0 ;
+      padding: 20px;
+      color: #f6f6f6;
+    }
+    button{
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 30px;
+      background: #52ad9c;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      }
+      input[type="text"], input[type="password"],select{
+        width: 70%;
+        height: 30px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        border: 1px solid #dadada;
+        color: #888;
+      }
+    .required{
+      color: red;
+      }
+    label>span{
+      float: left;
+      width: 25%;
+      margin-top: 12px;
+      padding-right: 10px;
+    }
     </style>
-<title>Tabel Menu Frozen Food</title>
+<title >Tabel Menu Frozen Food</title>
 </head>
 <body>
-
-<h2 class="header1" align="left-center">Tabel Menu Frozen Food</h2>
-
-<table class="table-auto" border="1" width="80%" >
+<div class="container">
+  <div class="title">
+    <h2>Tabel Frozen Food</h2>
+</div>
+<table class="table-auto" border="1" width="100%" >
     <tr>
         <th class="header" rowspan="2" width="5px">No</th>
         <th class="header" rowspan="2" width="10px">Makanan</th>
@@ -21,103 +104,116 @@
         <th class="header" width="10px" colspan="2">Pengiriman</th>
     </tr>
     <tr>
-        <td class="header" align="center" width="10px">Dalam Kota</td> 
-        <td class="header" align="center" width="10px">Luar Kota</td>
+        <td class="header"  width="10px">Dalam Kota</td> 
+        <td class="header"  width="10px">Luar Kota</td>
     </tr>
     <tr>
-        <td rowspan="3" align="center">1</td>
+        <td rowspan="3">1</td>
         <td rowspan="3">
             <img  width=70%" height="70%"src="fiesta_nugget.jpg" alt="Fiesta Chicken Nugget">
         </td>
-        <td rowspan="3" align="center">Fiesta Chicken Nugget</td>
-        <td  align="center" >250 gr</td>
-        <td  align="center" >Rp 25.000</td>
-        <td width="5px"rowspan="2" align="center">GOSEND, GRABEXPRESS</td>
-        <td width="5px"rowspan="2" align="center">JNE, JNT, SICEPAT</td>
+        <td rowspan="3" >Fiesta Chicken Nugget</td>
+        <td   >250 gr</td>
+        <td   >Rp 25.000</td>
+        <td width="5px"rowspan="2" >GOSEND, GRABEXPRESS</td>
+        <td width="5px"rowspan="2" >JNE, JNT, SICEPAT</td>
     </tr>
     <tr>
-        <td  align="center">500 gr</td>
-        <td align="center">Rp 45.000</td>
+        <td >500 gr</td>
+        <td >Rp 45.000</td>
     </tr>
     <tr>
-        <td  align="center">1 kg </td>
-        <td  align="center">Rp 85.000  </td>
-        <td  align="center">Rp 20.000 - 25.000  </td>
-        <td  align="center">Rp 18.000 - 20.000  </td>
+        <td  >1 kg </td>
+        <td  >Rp 85.000  </td>
+        <td  >Rp 20.000 - 25.000  </td>
+        <td  >Rp 18.000 - 20.000  </td>
     </tr>
     <tr>
-        <td rowspan="3" align="center">2</td>
+        <td rowspan="3" >2</td>
         <td rowspan="3">
             <img  width="70%" height="70%"src="kanzler_cocktail.jpg" alt="Kanzler Cocktail">
         </td>
-        <td rowspan="3" align="center">Kanzler Cocktail</td>
-        <td  align="center" >300 gr</td>
-        <td  align="center" >Rp 45.000</td>
-        <td width="5px"rowspan="2" align="center">GOSEND, GRABEXPRESS</td>
-        <td width="5px"rowspan="2" align="center">JNE, JNT, SICEPAT</td>
+        <td rowspan="3" >Kanzler Cocktail</td>
+        <td   >300 gr</td>
+        <td   >Rp 45.000</td>
+        <td width="5px"rowspan="2" >GOSEND, GRABEXPRESS</td>
+        <td width="5px"rowspan="2" >JNE, JNT, SICEPAT</td>
     </tr>
     <tr>
-        <td  align="center">650 gr</td>
-        <td align="center">Rp 95.000</td>
+        <td >650 gr</td>
+        <td >Rp 95.000</td>
     </tr>
     <tr>
-        <td  align="center">1 kg </td>
-        <td  align="center">Rp 160.000  </td>
-        <td  align="center">Rp 20.000 - 25.000  </td>
-        <td  align="center">Rp 18.000 - 20.000  </td>
+        <td  >1 kg </td>
+        <td  >Rp 160.000  </td>
+        <td  >Rp 20.000 - 25.000  </td>
+        <td  >Rp 18.000 - 20.000  </td>
     </tr>
     <tr>
-        <td rowspan="3" align="center">3</td>
+        <td rowspan="3" >3</td>
         <td rowspan="3">
             <img width="100%" height="100%"src="golden_farm_shoes.jpg" alt="Goldenfarm Shoestring">
         </td>
-        <td rowspan="3" align="center">Goldenfarm Shoestring</td>
-        <td  align="center" >250 gr</td> 
-        <td  align="center" >Rp 19.000</td>
-        <td width="5px"rowspan="2" align="center">GOSEND, GRABEXPRESS</td>
-        <td width="5px"rowspan="2" align="center">JNE, JNT, SICEPAT</td>
+        <td rowspan="3" >Goldenfarm Shoestring</td>
+        <td   >250 gr</td> 
+        <td   >Rp 19.000</td>
+        <td width="5px"rowspan="2" >GOSEND, GRABEXPRESS</td>
+        <td width="5px"rowspan="2" >JNE, JNT, SICEPAT</td>
     </tr> 
     <tr>
-        <td  align="center">500 gr</td>
-        <td align="center">Rp 35.000</td>
+        <td  >500 gr</td>
+        <td >Rp 35.000</td>
     </tr>
     <tr>
-        <td  align="center">1 kg </td>
-        <td  align="center">Rp 55.000  </td>
-        <td  align="center">Rp 20.000 - 25.000  </td>
-        <td  align="center">Rp 18.000 - 20.000  </td>
+        <td  >1 kg </td>
+        <td  >Rp 55.000  </td>
+        <td  >Rp 20.000 - 25.000  </td>
+        <td  >Rp 18.000 - 20.000  </td>
     </tr>
+  </div>
 </table>
 
 </body>
 <br>
-<h2>Formulir Pemesanan </h2>
-<form>
-    <label for="fnama">Nama Pemesan :</label>
-    <input type="text" name="fnama" id="fnama"><br>
-    <label for="notelp">No. Telp :</label>
-    <input type="text" name="notelp" id="notelp"><br>
-    <label for="alamat">Alamat :</label><br>
-    <form method="post"> <textarea rows="10" cols=“40" wrap="physical" 
+  <div class="container">
+    <div class="title">
+        <h2>Product Order Form</h2>
+    </div>
+  <div class="d-flex">
+    <form action="" method="">
+      <label>
+        <span class="namalkp">Nama Lengkap <span class="required">*</span></span>
+        <input type="text" name="fname">
+      </label>
+      <br>
+      <label>
+        <span class="notelp">No Telp <span class="required">*</span></span>
+        <input type="text" name="notelp">
+      </label>
+      <br>
+    <label class="alamat"for="alamat">Alamat :</label><br>
+    <form method="post"> <textarea rows="10" cols="40" wrap="physical" 
         name="alamat">
     </textarea>
     <br>
-
-        <label for="pengiriman">Pengiriman :</label>
-        <input type="radio" id="jne" name="kirim" value="JNE">
-    <label for="jne">JNE</label>
-    <input type="radio" id="jne" name="kirim" value="JNT">
-    <label for="jne">JNT</label>
-    <input type="radio" id="sicepat" name="kirim" value="SICEPAT">
-    <label for="sicepat">SICEPAT</label><br>
-
+    <div>
+      <label class="kirim" for="pengiriman">Pengiriman :</label>
+    <div>
+      <input type="radio" id="jne" name="kirim" value="JNE">
+      <label class="radioB"for="jne">JNE</label>
+      <input type="radio" id="jne" name="kirim" value="JNT">
+      <label class="radioB"for="jne">JNT</label>
+      <input type="radio" id="sicepat" name="kirim" value="SICEPAT">
+      <label class="radioB" for="sicepat">SICEPAT</label><br>
+    </div>
+    </div>
         <label for="menupilihan">Menu Pilihan:</label>
         <input type="radio" name="menupilihan" id="FCNugget" value="FCNugget">
-        <label for="FCNugget">Fiesta Chicken Nugget</label>
+        <label class="radioB" for="FCNugget">Fiesta Chicken Nugget</label>
         <input type="radio" name="menupilihan" id="KnzCocktail" value="KnzCocktail">
-        <label for="KnzCocktail">Kanzler Cocktail</label>
+        <label class="radioB" for="KnzCocktail">Kanzler Cocktail</label>
         <input type="radio" name="menupilihan" id="GFShoestring" value="GFShoestring">
-        <label for="GFShoestring">Goldenfarm Shoestring</label>
+        <label class="radioB" for="GFShoestring">Goldenfarm Shoestring</label>
 </br>    
         <label for="lang">Berat:</label>
         <input type="checkbox" name="diklat" id="lang1" value="250 gr">
@@ -127,44 +223,93 @@
         <input type="checkbox" name="diklat" id="lang3" value="1kg">
         <label for="lang3">1kg</label>
     <br>
-        <label for="jmlpesanan">Jumlah Pesanan:</label>
+        <label for="jmlpesanan">
+        <span>Jumlah Pesanan:</span>
         <select id="jmlpesanan">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
         </select>
+      </label>
 
     <br>
         <label for="bayar">Pembayaran:</label>
         <input type="radio" name="bayar" id="COD" value="COD">
-        <label for="COD">COD</label>
+        <label class="radioB" for="COD">COD</label>
         <input type="radio" name="bayar" id="tfbank" value="tfbank">
-        <label for="TransferBank">TF Bank</label>
+        <label class="radioB" for="TransferBank">TF Bank</label>
     <br>
-        <label for="rek">No Rekening:</label>
+        <label for="rek">
+        <span>No Rekening</span>
         <select id="rek">
             <option value="BCA">BCA - 7756723109</option>
             <option value="BNI">BNI - 3672290909</option>
             <option value="Kosong">Kosong Jika COD</option>
         </select>
+      </label>
         <br>
         <br>
-        <input type="submit" value="Simpan Pesanan" name="t1">
-        <input type="reset" value="Batalkan" name="t2">
+        <input  type="submit" value="Simpan Pesanan" name="t1">
+        <input  type="reset" value="Batalkan" name="t2">
+<div>
     <h2>Formulir Member</h2>
-        <label for="uname">Username:</label>
-        <input type="text" name="uname" id="uname"> 
-    <br>
-        <label for="pass">Password:</label>
-        <input type="password" name="pass" id="pass">
+    <label>
+      <span class="username">Username <span class="required">*</span></span>
+      <input type="text" name="username">
+    </label>
+    <label>
+      <span class="pass">Password <span class="required">*</span></span>
+          <input type="password" name="pass">
+    </label>
     <br>    
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email">
+    <label>
+      <span class="email">Email <span class="required">*</span></span>
+      <input type="text" name="email">
+    </label>
     <br>
         <label for="bukti">Struk Pembelian Terakhir:</label>
         <input type="file" name="bukti" id="bukti">
     <br>
     <br>
     <input type="submit" value="Simpan" name="t1">
-    <input type="reset" value="Reset" name="t2">     
+    <input type="reset" value="Reset" name="t2">
+    </div> 
+  </div>
+</form>
+    <!-- <div class="Yorder">
+      <table>
+        <tr>
+          <th colspan="2">Your order</th>
+        </tr>
+        <tr>
+          <td>Product Name x 2(Qty)</td>
+          <td>$88.00</td>
+        </tr>
+        <tr>
+          <td>Subtotal</td>
+          <td>$88.00</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td>Free shipping</td>
+        </tr>
+      </table><br>
+      <div>
+        <input type="radio" name="dbt" value="dbt" checked> Direct Bank Transfer
+      </div>
+      <p>
+          Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+      </p>
+      <div>
+        <input type="radio" name="dbt" value="cd"> Cash on Delivery
+      </div>
+      <div>
+        <input type="radio" name="dbt" value="cd"> Paypal <span>
+        <img src="https://www.logolynx.com/images/logolynx/c3/c36093ca9fb6c250f74d319550acac4d.jpeg" alt="" width="50">
+        </span>
+      </div>
+      <button type="button">Place Order</button>
+    </div>
+  </div>
+  </div> -->
 </html>
