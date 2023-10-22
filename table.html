@@ -176,6 +176,40 @@ body{
         font-family:'Roboto Condensed', sans-serif;
 
     }
+    .drop-container {
+      font-family:'Roboto Condensed', sans-serif;
+      position: relative;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px dashed #555;
+      color: #444;
+      cursor: pointer;
+      transition: background .2s ease-in-out, border .2s ease-in-out;
+    }
+    
+    .drop-container:hover {
+      background: #eee;
+      border-color: #111;
+    }
+    
+    .drop-container:hover .drop-title {
+      color: #222;
+    }
+    
+    .drop-title {
+      color: #fc5e5e;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      transition: color .2s ease-in-out;
+    }
+    
     </style>
 <title >Tabel Menu Frozen Food</title>
 </head>
@@ -357,9 +391,12 @@ body{
       <input type="text" name="email">
     </label>
     <br>
-        <label for="bukti">Struk Pembelian Terakhir:</label>
-        <input class="form-control" type="file" name="bukti" id="bukti">
-    <br>
+        <label class="header2" for="bukti">Struk Pembelian Terakhir:</label>
+        <label for="images" class="drop-container" id="dropcontainer">
+          <span class="drop-title">Drop files here</span>
+          or
+          <input type="file" id="images" accept="image/*" required>
+        </label>
     <br>
     <input class="button" type="submit" value="Simpan" name="t1">
     <input class="button1" type="reset" value="Reset" name="t2">
