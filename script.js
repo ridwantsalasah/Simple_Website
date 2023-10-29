@@ -42,10 +42,6 @@ function confirmSubmissionT3() {
   const email = document.querySelector("input[name='email']").value;
   const images = document.querySelector("input[id='images']").value;
 
-  console.log("username:", username);
-  console.log("pass:", pass);
-  console.log("email:", email);
-
   if (username.trim() === '' || pass.trim() === '' || email.trim() === '' || images.trim() === '') {
     alert("Silahkan lengkapi semua data terlebih dahulu!");
   } else {
