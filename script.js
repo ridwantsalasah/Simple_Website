@@ -1,22 +1,5 @@
   // Fungsi untuk menampilkan notifikasi
-  function confirmSubmission() {
-    // Periksa apakah data sudah terisi
-    const username = document.querySelector("input[name='username']").value;
-    const password = document.querySelector("input[name='pass']").value;
-    const email = document.querySelector("input[name='email']").value;
-
-    if (username.trim() === '' || password.trim() === '' || email.trim() === '') {
-      alert("Silahkan masukkan data terlebih dahulu!");
-    } else {
-      if (confirm("Apakah yakin data sudah benar?")) {
-        // Jika pengguna menekan OK, maka form akan disubmit
-        document.querySelector("form").submit();
-      }
-    }
-  }
-
-  // Fungsi untuk menampilkan notifikasi
-  function confirmSubmission() {
+  function confirmSubmissionT1() {
     // Periksa apakah semua bidang yang wajib diisi telah terisi
     const fname = document.querySelector("input[name='fname']").value;
     const notelp = document.querySelector("input[name='notelp']").value;
@@ -51,11 +34,46 @@
     }
   }
 
-  // Menambahkan event listener pada tombol "Simpan Pesanan" (t1)
-  document.querySelector("input[name='t1']").addEventListener("click", function (e) {
-    e.preventDefault(); // Mencegah pengiriman form otomatis
-    confirmSubmission();
-  });
+// Event listener untuk tombol "Simpan Pesanan" (t1)
+document.querySelector("input[name='t1']").addEventListener("click", function (e) {
+  e.preventDefault(); // Mencegah pengiriman form otomatis
+  // Fungsi untuk memeriksa dan menampilkan notifikasi untuk t1
+  confirmSubmissionT1();
+});
+
+// Fungsi untuk menampilkan notifikasi untuk t3
+function confirmSubmissionT3() {
+  // Periksa apakah semua bidang yang wajib diisi untuk t3 telah terisi
+  const username = document.querySelector("input[name='username']").value;
+  const pass = document.querySelector("input[name='pass']").value;
+  const email = document.querySelector("input[name='email']").value;
+
+  if (username.trim() === '' || pass.trim() === '' || email.trim() === '') {
+    alert("Silahkan lengkapi semua data terlebih dahulu!");
+  } else {
+    if (confirm("Apakah yakin data sudah benar?")) {
+      // Jika pengguna menekan OK, maka form t3 akan disubmit
+      document.querySelector("form[name='formulir-member']").submit();
+
+      // Tampilkan notifikasi "Data member tersimpan :)"
+      alert("Data member tersimpan :)");
+    }
+  }
+}
+
+// Menambahkan event listener pada tombol "Simpan Pesanan" (t1)
+document.querySelector("input[name='t1']").addEventListener("click", function (e) {
+  e.preventDefault(); // Mencegah pengiriman form otomatis
+  confirmSubmissionT1();
+});
+
+// Menambahkan event listener pada tombol "Simpan" (t3)
+document.querySelector("input[name='t3']").addEventListener("click", function (e) {
+  e.preventDefault(); // Mencegah pengiriman form otomatis
+  confirmSubmissionT3();
+});
+
+
   document.getElementById('images').addEventListener('change', function (e) {
     var preview = document.getElementById('preview');
     var dropspan = document.getElementById('dropspan'); // Tambahkan ini
