@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
 <head>
     <style>;
 body{
@@ -54,18 +55,7 @@ body{
       padding: 20px;
       color: #f6f6f6;
     }
-    /*button{
-      width: 100%;
-      margin-top: 10px;
-      padding: 10px;
-      border: none;
-      border-radius: 30px;
-      background: #509e90;
-      color: #8a2f2f;
-      font-size: 15px;
-      font-weight: bold;
-      }*/
-      input[type="text"], input[type="password"],select{
+    input[type="text"], input[type="password"],select{
         width: 70%;
         height: 30px;
         padding: 5px 10px;
@@ -97,21 +87,6 @@ body{
       font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
       font-size: 16px;
       font-weight: 600;
-      /*letter-spacing: normal;
-      line-height: 1.5;
-      outline: none;
-      overflow: hidden;
-      padding: 13px 20px;
-      position: relative;
-      text-align: center;
-      text-decoration: none;
-      transform: translate3d(0, 0, 0);
-      transition: all .3s;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-      vertical-align: top;
-      white-space: nowrap;*/
     }
     .button1{
         appearance: none;
@@ -126,48 +101,8 @@ body{
         display: inline-block;
         font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
         font-size: 16px;
-        font-weight: 600;
-        /*letter-spacing: normal;
-        line-height: 1.5;
-        outline: none;
-        overflow: hidden;
-        padding: 13px 20px;
-        position: relative;
-        text-align: center;
-        text-decoration: none;
-        transform: translate3d(0, 0, 0);
-        transition: all .3s;
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        vertical-align: top;
-        white-space: nowrap;*/
+        font-weight: 600;       
       }
-    
-    /*.button:hover {
-      background-color: #1e8449;
-      opacity: 1;
-      transform: translateY(0);
-      transition-duration: .35s;
-    }
-    .button1:hover {
-        background-color: #a81717;
-        opacity: 1;
-        transform: translateY(0);
-        transition-duration: .35s;
-      }
-    .button:active {
-      transform: translateY(2px);
-      transition-duration: .35s;
-    }
-    .button1:active {
-        transform: translateY(2px);
-        transition-duration: .35s;
-      }
-    
-    .button:hover {
-      box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
-    }*/
     .radioB, .header2{
         font-family:'Roboto Condensed', sans-serif;
 
@@ -186,17 +121,7 @@ body{
       border: 2px dashed #555;
       color: #444;
       cursor: pointer;
-    }
-    
-    /*.drop-container:hover {
-      background: #eee;
-      border-color: #111;
-    }
-    
-    .drop-container:hover .drop-title {
-      color: #222;
-    }*/
-    
+    }  
     .drop-title {
       color: #fc5e5e;
       font-size: 20px;
@@ -229,7 +154,7 @@ body{
     <tr>
         <td rowspan="3">1</td>
         <td rowspan="3">
-            <img  width="70%" height="70%"src="fiesta_nugget.jpg" alt="Fiesta Chicken Nugget">
+            <img  width="70%" height="70%"src="img/fiesta_nugget.jpg" alt="Fiesta Chicken Nugget">
         </td>
         <td rowspan="3" >Fiesta Chicken Nugget</td>
         <td >250 gr</td>
@@ -250,7 +175,7 @@ body{
     <tr>
         <td rowspan="3" >2</td>
         <td rowspan="3">
-            <img  width="70%" height="70%"src="kanzler_cocktail.jpg" alt="Kanzler Cocktail">
+            <img  width="70%" height="70%"src="img/kanzler_cocktail.jpg" alt="Kanzler Cocktail">
         </td>
         <td rowspan="3" >Kanzler Cocktail</td>
         <td >300 gr</td>
@@ -271,7 +196,7 @@ body{
     <tr>
         <td rowspan="3" >3</td>
         <td rowspan="3">
-            <img width="100%" height="100%"src="golden_farm_shoes.jpg" alt="Goldenfarm Shoestring">
+            <img width="100%" height="100%"src="img/golden_farm_shoes.jpg" alt="Goldenfarm Shoestring">
         </td>
         <td rowspan="3" >Goldenfarm Shoestring</td>
         <td >250 gr</td> 
@@ -368,11 +293,19 @@ body{
       </label>
         <br>
         <br>
-        <input class="button" type="submit" value="Simpan Pesanan" name="t1">
+        <input class="button" type="submit" value="Simpan Pesanan" name="t1" id="t1">
         <input class="button1" type="reset" value="Batalkan" name="t2">
+</form>
+</div>
+<br>
 <div>
-  <form>
-    <h2>Formulir Member</h2>
+  <br>
+  <div class="container">
+    <div class="title">
+        <h2>Formulir Member</h2>
+    </div>
+  <div class="d-flex">
+    <form action="" method="">
     <label>
       <span class="username">Username <span class="required">*</span></span>
       <input type="text" name="username">
@@ -387,16 +320,18 @@ body{
       <input type="text" name="email">
     </label>
     <br>
-        <label class="header2" for="bukti">Struk Pembelian Terakhir:</label>
-        <label for="images" class="drop-container" id="dropcontainer">
-          <span class="drop-title">Drop files here</span>
-          or
-          <input type="file" id="images" accept="image/*" required>
-        </label>
+    <label class="header2" for="bukti">Struk Pembelian Terakhir:</label>
+    <label for="images" class="drop-container" id="dropcontainer">
+      <span class="drop-title">Drop or choose files</span>
+      <input type="file" id="images" accept="image/*" required>
+      <img id="preview" src="" alt="Image Preview">
+    </label>
     <br>
-    <input class="button" type="submit" value="Simpan" name="t3">
+    <br>
+    <input id="submit-button" class="button" type="submit" value="Simpan" name="t3">
     <input class="button1" type="reset" value="Reset" name="t4">
-    </div> 
   </div>
+  <script src="script.js"></script>
 </form>
+</div>
 </html>
