@@ -56,19 +56,22 @@
     e.preventDefault(); // Mencegah pengiriman form otomatis
     confirmSubmission();
   });
-
-document.getElementById('images').addEventListener('change', function (e) {
+  document.getElementById('images').addEventListener('change', function (e) {
     var preview = document.getElementById('preview');
+    var dropspan = document.getElementById('dropspan'); // Tambahkan ini
+  
     var file = e.target.files[0];
     var reader = new FileReader();
   
     reader.onload = function () {
       preview.src = reader.result;
+      dropspan.style.display = 'none'; // Menghilangkan span ketika gambar diunggah
     };
   
     if (file) {
       reader.readAsDataURL(file);
     } else {
       preview.src = '';
+      dropspan.style.display = 'block'; // Menampilkan span jika tidak ada gambar yang dipilih
     }
-  });  
+  });
