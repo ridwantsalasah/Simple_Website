@@ -139,13 +139,12 @@ label > span {
   text-align: center;
   transition: color 0.2s ease-in-out;
 }
-/* Optional styling for the input element */
 #images {
-    display: none; /* Hide the input element */
+    display: none;
     }
 
 #preview {
   max-width: 100%;
-  max-height: 200px; /* Atur ukuran maksimum pratinjau sesuai kebutuhan */
+  max-height: 200px;
   margin-top: 10px;
 }
