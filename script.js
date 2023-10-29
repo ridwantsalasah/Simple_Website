@@ -34,21 +34,19 @@
     }
   }
 
-// Event listener untuk tombol "Simpan Pesanan" (t1)
-document.querySelector("input[name='t1']").addEventListener("click", function (e) {
-  e.preventDefault(); // Mencegah pengiriman form otomatis
-  // Fungsi untuk memeriksa dan menampilkan notifikasi untuk t1
-  confirmSubmissionT1();
-});
-
 // Fungsi untuk menampilkan notifikasi untuk t3
 function confirmSubmissionT3() {
   // Periksa apakah semua bidang yang wajib diisi untuk t3 telah terisi
   const username = document.querySelector("input[name='username']").value;
   const pass = document.querySelector("input[name='pass']").value;
   const email = document.querySelector("input[name='email']").value;
+  const images = document.querySelector("input[id='images']").value;
 
-  if (username.trim() === '' || pass.trim() === '' || email.trim() === '') {
+  console.log("username:", username);
+  console.log("pass:", pass);
+  console.log("email:", email);
+
+  if (username.trim() === '' || pass.trim() === '' || email.trim() === '' || images.trim() === '') {
     alert("Silahkan lengkapi semua data terlebih dahulu!");
   } else {
     if (confirm("Apakah yakin data sudah benar?")) {
