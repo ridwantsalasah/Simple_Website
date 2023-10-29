@@ -2,102 +2,91 @@
 <head>
 <link rel="stylesheet" href="../style.css" />
     <style>;
-      body{
-        background: url('http://all4desktop.com/data_images/original/4236532-background-images.jpg');
-        font-family: 'Roboto Condensed', sans-serif;
-        color: #262626;
-        margin: 5% 0;}
-        tr {
-          background-color: beige;
-          font-family: Arial;
+body{
+  background: url('http://all4desktop.com/data_images/original/4236532-background-images.jpg');
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #262626;
+  margin: 5% 0;}
+      tr{background-color: beige; font-family: Arial; }
+      td.header{
+        font-weight: bold; 
+      }
+      td {
+      text-align: center;
+      }
+      th.header {
+      text-align: center;
+      vertical-align: middle;
+      width: 5px;
+    }
+      .container{
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      @media (min-width: 1200px)
+      {
+        .container{
+          max-width: 1140px;
         }
-        td.header {
-          font-weight: bold;
-        }
-        td {
-          text-align: center;
-        }
-        th.header {
-          text-align: center;
-          vertical-align: middle;
-          width: 5px;
-        }
-        .container {
-          width: 100%;
-          padding-right: 15px;
-          padding-left: 15px;
-          margin-right: auto;
-          margin-left: auto;
-        }
-        @media (min-width: 1200px) {
-          .container {
-            max-width: 1140px;
-          }
-        }
-        .d-flex {
-          display: flex;
-          flex-direction: row;
-          background: #f6f6f6;
-          border-radius: 0 0 5px 5px;
-          padding: 25px;
-        }
-        form {
-          flex: 4;
-        }
-        .Yorder {
-          flex: 2;
-        }
-        h2 {
-          text-align: center;
-        }
-        
-        .title {
-          background: -webkit-gradient(
-            linear,
-            left top,
-            right bottom,
-            color-stop(0, #5195a8),
-            color-stop(100, #70eaff)
-          );
-          background: -moz-linear-gradient(top left, #5195a8 0%, #70eaff 100%);
-          background: -ms-linear-gradient(top left, #5195a8 0%, #70eaff 100%);
-          background: -o-linear-gradient(top left, #5195a8 0%, #70eaff 100%);
-          background: linear-gradient(to bottom right, #5195a8 0%, #70eaff 100%);
-          border-radius: 5px 5px 0 0;
-          padding: 20px;
-          color: #f6f6f6;
-        }
-        button {
-          width: 100%;
-          margin-top: 10px;
-          padding: 10px;
-          border: none;
-          border-radius: 30px;
-          background: #52ad9c;
-          color: #fff;
-          font-size: 15px;
-          font-weight: bold;
-        }
-        input[type="text"],
-        input[type="password"],
-        select {
-          width: 70%;
-          height: 30px;
-          padding: 5px 10px;
-          margin-bottom: 10px;
-          border: 1px solid #dadada;
-          color: #5c5c5c;
-        }
-        .required {
-          color: red;
-        }
-        label > span {
-          float: left;
-          width: 25%;
-          margin-top: 12px;
-          padding-right: 10px;
-        }
-        
+      }
+      .d-flex{
+        display: flex;
+        flex-direction: row;
+        background: #f6f6f6;
+        border-radius: 0 0 5px 5px;
+        padding: 25px;
+      }
+      form{
+        flex: 4;
+      }
+      .Yorder{
+        flex: 2;
+      }
+      h2{
+        text-align: center;
+      }
+      
+    .title{
+      background: -webkit-gradient(linear, left top, right bottom, color-stop(0, #5195A8), color-stop(100, #70EAFF));
+      background: -moz-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+      background: -ms-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+      background: -o-linear-gradient(top left, #5195A8 0%, #70EAFF 100%);
+      background: linear-gradient(to bottom right, #5195A8 0%, #70EAFF 100%);
+      border-radius:5px 5px 0 0 ;
+      padding: 20px;
+      color: #f6f6f6;
+    }
+    button{
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 30px;
+      background: #52ad9c;
+      color: #fff;
+      font-size: 15px;
+      font-weight: bold;
+      }
+      input[type="text"], input[type="password"],select{
+        width: 70%;
+        height: 30px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        border: 1px solid #dadada;
+        color: #888;
+      }
+    .required{
+      color: red;
+      }
+    label>span{
+      float: left;
+      width: 25%;
+      margin-top: 12px;
+      padding-right: 10px;
+    }
     </style>
 <title >Tabel Menu Frozen Food</title>
 </head>
@@ -209,19 +198,17 @@
     </textarea>
     <br>
     <div>
-      <label class="kirim" for="pengiriman">Pengiriman :</label>
+      <label class="header2" for="pengiriman">Pengiriman :</label>
     <div>
       <input type="radio" id="jne" name="kirim" value="JNE">
       <label class="radioB"for="jne">JNE</label>
-      <input type="radio" id="jne" name="kirim" value="JNT">
+      <input  type="radio" id="jne" name="kirim" value="JNT">
       <label class="radioB"for="jne">JNT</label>
       <input type="radio" id="sicepat" name="kirim" value="SICEPAT">
       <label class="radioB" for="sicepat">SICEPAT</label><br>
     </div>
     </div>
-      <div>
-        <label class="kirim" for="pengiriman">Menu pilihan :</label>
-      <div>
+        <label for="menupilihan">Menu Pilihan:</label>
         <input type="radio" name="menupilihan" id="FCNugget" value="FCNugget">
         <label class="radioB" for="FCNugget">Fiesta Chicken Nugget</label>
         <input type="radio" name="menupilihan" id="KnzCocktail" value="KnzCocktail">
@@ -229,7 +216,7 @@
         <input type="radio" name="menupilihan" id="GFShoestring" value="GFShoestring">
         <label class="radioB" for="GFShoestring">Goldenfarm Shoestring</label>
 </br>    
-        <label for="lang">Berat :</label>
+        <label for="lang">Berat:</label>
         <input type="checkbox" name="diklat" id="lang1" value="250 gr">
         <label for="lang1">250 gr</label>
         <input type="checkbox" name="diklat" id="lang2" value="500 gr">
@@ -263,8 +250,8 @@
       </label>
         <br>
         <br>
-        <input  type="submit" value="Simpan Pesanan" name="t1">
-        <input  type="reset" value="Batalkan" name="t2">
+        <input class="button" type="submit" value="Simpan Pesanan" name="t1">
+        <input class="button1" type="reset" value="Batalkan" name="t2">
 <div>
     <h2>Formulir Member</h2>
     <label>
@@ -281,12 +268,15 @@
       <input type="text" name="email">
     </label>
     <br>
-        <label for="bukti">Struk Pembelian Terakhir:</label>
-        <input type="file" name="bukti" id="bukti">
+        <label class="header2" for="bukti">Struk Pembelian Terakhir:</label>
+        <label for="images" class="drop-container" id="dropcontainer">
+          <span class="drop-title">Drop files here</span>
+          or
+          <input type="file" id="images" accept="image/*" required>
+        </label>
     <br>
-    <br>
-    <input type="submit" value="Simpan" name="t1">
-    <input type="reset" value="Reset" name="t2">
+    <input class="button" type="submit" value="Simpan" name="t1">
+    <input class="button1" type="reset" value="Reset" name="t2">
     </div> 
   </div>
 </form>
